@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import styled from "@emotion/styled";
 
 const Scene = styled.div`
-  positon: relative;
+  position: relative;
   height: 100dvh;
   perspective: 800px;
   perspective-origin: 50% 40%;
@@ -12,7 +12,7 @@ const Scene = styled.div`
 const Hall = styled(motion.div)`
   position: absolute;
   inset: -20vh -20vw;
-  transform-styled: preserve-3d;
+  transform-style: preserve-3d;
 `;
 
 const Panel = styled.div`
@@ -66,7 +66,7 @@ const Item = styled.div`
   border-radius: 12px;
   backdrop-filter: blur(4px);
   outline: 1px solid rgba(255, 255, 255, 0.08);
-  will-cahnge: transform;
+  will-change: transform;
 
   h2 {
     margin: 0 0 6px;
@@ -74,8 +74,8 @@ const Item = styled.div`
     font-size: 18px;
   }
   p {
-    marign: 0;
-    opacitiy: 0.9;
+    margin: 0;
+    opacity: 0.9;
     font-size: 14px;
   }
 `;
@@ -108,8 +108,8 @@ export default function Corridor() {
             }px)`,
           }}
         >
-          <h2>Chechpoint A</h2>
-          <p> Bir aciklama metni.</p>
+          <h2>Checkpoint A</h2>
+          <p>Bir açıklama metni.</p>
         </Item>
 
         <Item
@@ -120,7 +120,7 @@ export default function Corridor() {
           }}
         >
           <h2>Info Panel</h2>
-          <p>Scroll ettikce yaklasir.</p>
+          <p>Scroll ettikçe yaklaşır.</p>
         </Item>
 
         <Item
@@ -131,7 +131,7 @@ export default function Corridor() {
           }}
         >
           <h2>Gallery</h2>
-          <p>Buraya bilesen/galeri baglariz.</p>
+          <p>Buraya bileşen/galeri bağlarız.</p>
         </Item>
       </Hall>
     </Scene>
